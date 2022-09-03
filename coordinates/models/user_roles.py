@@ -31,5 +31,8 @@ class GroupLeader(CommonModel):
     user = models.ForeignKey(User, related_name='group_leaders', on_delete=models.CASCADE)
     group = models.ForeignKey(UserGroup, related_name='group_leaders', on_delete=models.CASCADE)
 
+    class Meta:
+        unique_together = ('user', 'group')
+
     def __str__(self):
         return f"{self.group.name} - {self.user.username}"
