@@ -1,0 +1,1 @@
+from coordinates.serializers.points_data.validate import PointsDataValidateSerializer
