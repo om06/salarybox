@@ -6,7 +6,7 @@ User = get_user_model()
 
 
 class PointsData(CommonModel):
-    user = models.ForeignKey(User, related_name="points", on_delete=models.PROTECT)
+    user = models.ForeignKey(User, related_name="points_data", on_delete=models.PROTECT)
     x = models.PositiveIntegerField()
     y = models.PositiveIntegerField()
 
