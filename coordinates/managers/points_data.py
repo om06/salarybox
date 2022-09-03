@@ -1,4 +1,3 @@
-from coordinates.models import PointsData
 from coordinates.serializers.points_data import PointsDataValidateSerializer
 
 
