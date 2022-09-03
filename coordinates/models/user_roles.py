@@ -13,7 +13,7 @@ class UserGroup(CommonModel):
         return self.name
 
 
-class GroupMembers(CommonModel):
+class GroupMember(CommonModel):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     group = models.ForeignKey(UserGroup, on_delete=models.CASCADE)
 
