@@ -26,3 +26,7 @@ class Graph(CommonModel):
 
     def __str__(self):
         return f"{self.user} - {self.reference_id} - {self.status}"
+
+    def update_status(self, status):
+        self.status = status
+        self.save()
