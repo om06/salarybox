@@ -1,0 +1,595 @@
+openapi: 3.0.0
+info:
+  title: SalaryBox
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+tags:
+  - name: Points Data
+  - name: Graph
+  - name: CSV
+paths:
+  /api/v1/points/:
+    get:
+      tags:
+        - Points Data
+      summary: List points
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: Token 2b8322d881f8be3cfd4e4f65ae8835ab4510ed7b
+      responses:
+        '200':
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:22:17 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: GET, POST, HEAD, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '268'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Successfully performed task!
+                data:
+                  - x: 1
+                    'y': 2
+                  - x: 1
+                    'y': 2
+                  - x: 10
+                    'y': 43
+                  - x: 1
+                    'y': 2
+                  - x: 10
+                    'y': 43
+                  - x: 5
+                    'y': 3
+                  - x: 10
+                    'y': 3
+                  - x: 1
+                    'y': 2
+                  - x: 2
+                    'y': 3
+                  - x: 5
+                    'y': 3
+                  - x: 10
+                    'y': 3
+                  - x: 1
+                    'y': 2
+                  - x: 2
+                    'y': 3
+                  - x: 1
+                    'y': 2
+    post:
+      tags:
+        - Points Data
+      summary: Add points
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                x: 1
+                'y': 2
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: Token 2b8322d881f8be3cfd4e4f65ae8835ab4510ed7b
+      responses:
+        '201':
+          description: Created
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:21:37 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: GET, POST, HEAD, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '97'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Successfully performed task!
+                data: Successfully added points data
+        '400':
+          description: Bad Request
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:21:56 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: GET, POST, HEAD, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '119'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: false
+                message: Failed to perform task!
+                error_code: null
+                data:
+                  - 'y':
+                      - A valid integer is required.
+  /api/v1/group/tech-team/:
+    get:
+      tags:
+        - Points Data
+      summary: List points of group
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: Token 2f4ef1641a92e2c62800780c6b1f4efd2a348de9
+      responses:
+        '200':
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:25:09 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: GET, HEAD, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '280'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Successfully performed task!
+                data:
+                  userone:
+                    - x: 1
+                      'y': 2
+                    - x: 1
+                      'y': 2
+                    - x: 10
+                      'y': 43
+                    - x: 1
+                      'y': 2
+                    - x: 10
+                      'y': 43
+                    - x: 5
+                      'y': 3
+                    - x: 10
+                      'y': 3
+                    - x: 1
+                      'y': 2
+                    - x: 2
+                      'y': 3
+                    - x: 5
+                      'y': 3
+                    - x: 10
+                      'y': 3
+                    - x: 1
+                      'y': 2
+                    - x: 2
+                      'y': 3
+                    - x: 1
+                      'y': 2
+  /api/v1/graph/:
+    post:
+      tags:
+        - Graph
+      summary: Add Graph task
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                x: 1
+                'y': Fdas
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: Token 2b8322d881f8be3cfd4e4f65ae8835ab4510ed7b
+      responses:
+        '200':
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:25:28 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: POST, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '131'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Successfully performed task!
+                data:
+                  created: true
+                  reference_id: 1aad105c9c84417185f8ceb007f37edf
+  /api/v1/graph/08b6e66ad7d3443babcf278dae219859:
+    get:
+      tags:
+        - Graph
+      summary: Get graph status
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: Token 2b8322d881f8be3cfd4e4f65ae8835ab4510ed7b
+      responses:
+        '200':
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:25:40 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: GET, HEAD, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '103'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Successfully performed task!
+                data:
+                  status: in-progress
+                  result: null
+  /api/v1/csv/:
+    post:
+      tags:
+        - CSV
+      summary: Load csv
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: Token 2b8322d881f8be3cfd4e4f65ae8835ab4510ed7b
+      responses:
+        '201':
+          description: Created
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:25:54 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: POST, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '163'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Successfully performed task!
+                data:
+                  reference_id: c21d6500c7bf4412a641fa9ae7a79e4d
+                  message: File queued for further processing
+  /api/v1/csv/786ef17581aa405f9dfff3e912b279b0:
+    get:
+      tags:
+        - CSV
+      summary: CSV status
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: Token 2b8322d881f8be3cfd4e4f65ae8835ab4510ed7b
+      responses:
+        '200':
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Sun, 04 Sep 2022 20:26:04 GMT
+            Server:
+              schema:
+                type: number
+                example: WSGIServer/0.2 CPython/3.10.0
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Vary:
+              schema:
+                type: string
+                example: Accept
+            Allow:
+              schema:
+                type: string
+                example: GET, HEAD, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+                example: DENY
+            Content-Length:
+              schema:
+                type: integer
+                example: '130'
+            X-Content-Type-Options:
+              schema:
+                type: string
+                example: nosniff
+            Referrer-Policy:
+              schema:
+                type: string
+                example: same-origin
+            Cross-Origin-Opener-Policy:
+              schema:
+                type: string
+                example: same-origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Successfully performed task!
+                data:
+                  status: completed
+                  message: Successfully added points data
