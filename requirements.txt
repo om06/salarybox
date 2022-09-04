@@ -3,3 +3,5 @@ djangorestframework==3.13.1
 matplotlib==3.5.3
 django-extensions==3.2.0
 ipython==8.4.0
+celery==5.2.7
+Redis==4.3.4
