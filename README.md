@@ -36,7 +36,7 @@ In another terminal run the below command to start celery worker
 `python -m celery -A salarybox worker`
 
 Access the Admin panel on 
-`http://localhost:8000`
+`http://localhost:8000/admin`
 
 **Please note**:
 If you are creating a new user than to generate the token you must create an entry in `Token` table either by Admin panel or Shell, auto token generation featue has not been included in this project.
