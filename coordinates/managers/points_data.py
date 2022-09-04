@@ -1,4 +1,8 @@
+from collections import defaultdict
+
+from coordinates.models import GroupLeader, PointsData
 from coordinates.serializers.points_data import PointsDataValidateSerializer
+from django.shortcuts import get_object_or_404
 
 
 class PointsDataManager:
@@ -33,4 +37,15 @@ class PointsDataManager:
         return list(self.user.points_data.values('x', 'y'))
 
     def get_group_members_data_points(self, group_code):
-        pass
+        """
+        Return the coordinates of all the users in the group with <group_code>
+        """
+        # TODO: Can we optimize this queries further, please check?
+        group = get_object_or_404(GroupLeader, user=self.user, group__code=group_code).group
+        points = PointsData.objects.filter(
+            user__group_members__group__code=group.code).values('user__username', 'x', 'y')
+
+        final_data = defaultdict(list)
+        for data in points:
+            final_data[data.pop('user__username')].append(data)
+        return final_data

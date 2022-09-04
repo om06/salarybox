@@ -15,8 +15,11 @@ class IsGroupLeader(permissions.BasePermission):
     message = ""
 
     def has_permission(self, request, view):
-        group_code = request.data.get('group_code')
-        group_exists = request.user.group_leaders.filter(group__code=group_code).exists()
+        group_code = request.parser_context.get('kwargs', {}).get('pk')
+        if group_code:
+            group_exists = request.user.group_leaders.filter(group__code=group_code).exists()
+        else:
+            group_exists = request.user.group_leaders.exists()
         if not group_exists:
             # TODO: Check whether User is active or not
             message = f"{request.user.username} is not a leader of {group_code}"
