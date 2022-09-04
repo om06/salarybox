@@ -5,9 +5,10 @@ Run the follwoing commands in sequence to install the project
 
 Prequisites
 
- 1. python 3.10 : https://www.python.org/downloads/
- 2. redis : https://redis.io/docs/getting-started/
- 3. For the simplicity Sqlite (Default Django DB) has been used in this project
+ 1. python 3.10: https://www.python.org/downloads/
+ 2. Virtual environments: https://docs.python.org/3/library/venv.html
+ 3. redis: https://redis.io/docs/getting-started/
+ 4. For the simplicity Sqlite (Default Django DB) has been used in this project
 
 ```
 cd
