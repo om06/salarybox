@@ -1,0 +1,334 @@
+[
+{
+    "model": "coordinates.pointsdata",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-09-03T20:06:53.595Z",
+        "updated_at": "2022-09-03T20:06:53.595Z",
+        "user": 2,
+        "x": 1,
+        "y": 2
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-09-03T20:07:27.803Z",
+        "updated_at": "2022-09-03T20:07:27.803Z",
+        "user": 2,
+        "x": 1,
+        "y": 2
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-09-03T20:07:27.807Z",
+        "updated_at": "2022-09-03T20:07:27.807Z",
+        "user": 2,
+        "x": 10,
+        "y": 43
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-09-03T20:20:48.811Z",
+        "updated_at": "2022-09-03T20:20:48.811Z",
+        "user": 2,
+        "x": 1,
+        "y": 2
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-09-03T20:20:48.812Z",
+        "updated_at": "2022-09-03T20:20:48.812Z",
+        "user": 2,
+        "x": 10,
+        "y": 43
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-09-04T19:54:13.348Z",
+        "updated_at": "2022-09-04T19:54:13.348Z",
+        "user": 2,
+        "x": 5,
+        "y": 3
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-09-04T19:54:13.351Z",
+        "updated_at": "2022-09-04T19:54:13.351Z",
+        "user": 2,
+        "x": 10,
+        "y": 3
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 8,
+    "fields": {
+        "created_at": "2022-09-04T19:54:13.353Z",
+        "updated_at": "2022-09-04T19:54:13.353Z",
+        "user": 2,
+        "x": 1,
+        "y": 2
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 9,
+    "fields": {
+        "created_at": "2022-09-04T19:54:13.354Z",
+        "updated_at": "2022-09-04T19:54:13.354Z",
+        "user": 2,
+        "x": 2,
+        "y": 3
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 10,
+    "fields": {
+        "created_at": "2022-09-04T19:55:51.892Z",
+        "updated_at": "2022-09-04T19:55:51.892Z",
+        "user": 2,
+        "x": 5,
+        "y": 3
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 11,
+    "fields": {
+        "created_at": "2022-09-04T19:55:51.893Z",
+        "updated_at": "2022-09-04T19:55:51.893Z",
+        "user": 2,
+        "x": 10,
+        "y": 3
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 12,
+    "fields": {
+        "created_at": "2022-09-04T19:55:51.893Z",
+        "updated_at": "2022-09-04T19:55:51.893Z",
+        "user": 2,
+        "x": 1,
+        "y": 2
+    }
+},
+{
+    "model": "coordinates.pointsdata",
+    "pk": 13,
+    "fields": {
+        "created_at": "2022-09-04T19:55:51.894Z",
+        "updated_at": "2022-09-04T19:55:51.894Z",
+        "user": 2,
+        "x": 2,
+        "y": 3
+    }
+},
+{
+    "model": "coordinates.pointsfile",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-09-04T19:36:22.583Z",
+        "updated_at": "2022-09-04T19:36:22.583Z",
+        "user": 2,
+        "file": "uploads/userone/116f5d0f5ee348af9e13d0b9350d25f0-salarybox.csv_-_Sheet1.csv",
+        "reference_id": "116f5d0f-5ee3-48af-9e13-d0b9350d25f0",
+        "status": "pending",
+        "message": ""
+    }
+},
+{
+    "model": "coordinates.pointsfile",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-09-04T19:42:01.382Z",
+        "updated_at": "2022-09-04T19:42:01.382Z",
+        "user": 2,
+        "file": "uploads/userone/7631c2b170f64fcbbd207dd5d8312f73-salarybox.csv_-_Sheet1.csv",
+        "reference_id": "7631c2b1-70f6-4fcb-bd20-7dd5d8312f73",
+        "status": "pending",
+        "message": ""
+    }
+},
+{
+    "model": "coordinates.pointsfile",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-09-04T19:42:11.826Z",
+        "updated_at": "2022-09-04T19:42:11.826Z",
+        "user": 2,
+        "file": "uploads/userone/3fd7d12a1f744253ae5200ad30c19281-salarybox.csv_-_Sheet1.csv",
+        "reference_id": "3fd7d12a-1f74-4253-ae52-00ad30c19281",
+        "status": "pending",
+        "message": ""
+    }
+},
+{
+    "model": "coordinates.pointsfile",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-09-04T19:44:38.476Z",
+        "updated_at": "2022-09-04T19:44:38.485Z",
+        "user": 2,
+        "file": "uploads/userone/ccaaaa6100a640948cf51cf66f592ca2-salarybox.csv_-_Sheet1.csv",
+        "reference_id": "ccaaaa61-00a6-4094-8cf5-1cf66f592ca2",
+        "status": "in-progress",
+        "message": ""
+    }
+},
+{
+    "model": "coordinates.pointsfile",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-09-04T19:46:13.249Z",
+        "updated_at": "2022-09-04T19:46:29.398Z",
+        "user": 2,
+        "file": "uploads/userone/322370aa711846bd922b46acf5dcfc79-salarybox.csv_-_Sheet1.csv",
+        "reference_id": "322370aa-7118-46bd-922b-46acf5dcfc79",
+        "status": "completed",
+        "message": ""
+    }
+},
+{
+    "model": "coordinates.pointsfile",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-09-04T19:54:06.497Z",
+        "updated_at": "2022-09-04T19:54:13.356Z",
+        "user": 2,
+        "file": "uploads/userone/91bad02cdee943aeb04d3a45b9f47315-salarybox.csv_-_Sheet1.csv",
+        "reference_id": "91bad02c-dee9-43ae-b04d-3a45b9f47315",
+        "status": "completed",
+        "message": "Successfully added points data"
+    }
+},
+{
+    "model": "coordinates.pointsfile",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-09-04T19:55:33.736Z",
+        "updated_at": "2022-09-04T19:55:51.895Z",
+        "user": 2,
+        "file": "uploads/userone/786ef17581aa405f9dfff3e912b279b0-salarybox.csv_-_Sheet1.csv",
+        "reference_id": "786ef175-81aa-405f-9dff-f3e912b279b0",
+        "status": "completed",
+        "message": "Successfully added points data"
+    }
+},
+{
+    "model": "coordinates.usergroup",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-09-03T20:11:14.855Z",
+        "updated_at": "2022-09-03T20:11:14.855Z",
+        "name": "Tech Team",
+        "code": "tech-team"
+    }
+},
+{
+    "model": "coordinates.groupmember",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-09-03T20:11:26.482Z",
+        "updated_at": "2022-09-03T20:11:26.482Z",
+        "user": 2,
+        "group": 1
+    }
+},
+{
+    "model": "coordinates.groupmember",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-09-03T20:11:32.796Z",
+        "updated_at": "2022-09-03T20:11:32.796Z",
+        "user": 3,
+        "group": 1
+    }
+},
+{
+    "model": "coordinates.groupmember",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-09-03T20:11:38.526Z",
+        "updated_at": "2022-09-03T20:11:38.527Z",
+        "user": 1,
+        "group": 1
+    }
+},
+{
+    "model": "coordinates.groupleader",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-09-03T20:11:45.294Z",
+        "updated_at": "2022-09-03T20:11:45.294Z",
+        "user": 1,
+        "group": 1
+    }
+},
+{
+    "model": "coordinates.graph",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-09-04T18:28:13.123Z",
+        "updated_at": "2022-09-04T18:40:17.723Z",
+        "user": 2,
+        "status": "completed",
+        "reference_id": "275050c3-8340-4f0f-afa5-69853153df83",
+        "result": "url/to/image.png"
+    }
+},
+{
+    "model": "coordinates.graph",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-09-04T18:40:28.791Z",
+        "updated_at": "2022-09-04T18:40:28.803Z",
+        "user": 2,
+        "status": "completed",
+        "reference_id": "673bf4d4-8bd0-4d72-a54a-e9aa582aee4e",
+        "result": "url/to/image.png"
+    }
+},
+{
+    "model": "coordinates.graph",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-09-04T18:45:13.457Z",
+        "updated_at": "2022-09-04T18:45:13.547Z",
+        "user": 2,
+        "status": "completed",
+        "reference_id": "bbb1d3dd-e914-456e-b76e-62b8421744e4",
+        "result": "url/to/image.png"
+    }
+},
+{
+    "model": "coordinates.graph",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-09-04T18:48:03.775Z",
+        "updated_at": "2022-09-04T18:48:03.854Z",
+        "user": 2,
+        "status": "in-progress",
+        "reference_id": "08b6e66a-d7d3-443b-abcf-278dae219859",
+        "result": null
+    }
+}
+]
