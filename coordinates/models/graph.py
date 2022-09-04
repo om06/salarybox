@@ -6,18 +6,23 @@ from django.db import models
 User = get_user_model()
 
 
-class GraphTask(CommonModel):
-    user = models.ForeignKey(User, related_name="graph_tasks", on_delete=models.CASCADE)
-    processed = models.BooleanField(default=False)
-    reference_id = models.UUIDField(default=uuid.uuid4, editable=False)
+class GraphStatus:
+    PENDING = "pending"
+    IN_PROGRESS = "in-progress"
+    COMPLETED = "completed"
 
-    def __str__(self):
-        return f"{self.user} - {self.reference_id} - {self.processed}"
+    CHOICES = (
+        (PENDING, "Pending"),
+        (IN_PROGRESS, "In Progress"),
+        (COMPLETED, "Completed")
+    )
 
 
 class Graph(CommonModel):
-    task = models.OneToOneField(GraphTask, related_name='graph', on_delete=models.PROTECT)
-    result = models.CharField(max_length=200)  # Can be URL field if we are using some kind of cloud storage
+    user = models.ForeignKey(User, related_name="graph_tasks", on_delete=models.CASCADE)
+    status = models.CharField(max_length=50, choices=GraphStatus.CHOICES, default=GraphStatus.PENDING)
+    reference_id = models.UUIDField(default=uuid.uuid4, editable=False)
+    result = models.CharField(max_length=500, blank=True, null=True)
 
     def __str__(self):
-        return self.task.reference_id
+        return f"{self.user} - {self.reference_id} - {self.status}"
