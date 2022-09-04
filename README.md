@@ -71,3 +71,6 @@ There are two APIs for both the cases:
  7. `created_at` time can be added in csv file to store the exact time of points addition rather than auto generating to current time in case of points being loaded from csv file.
  8. Instead of running the task asynchronously, we could use cron job to pick the task from db, it will also make the process fail safe.
  
+## Known issues
+ 
+ 1. Graph API is not working as expected, it is working fine in the shell but while running via API, the server is getting stopped unexpectedly, need to further inspect the issue, however I tried to add the base logic to generate the graph.
