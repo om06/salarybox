@@ -21,9 +21,10 @@ def plot_graph(reference_id):
     logger.info(f"[{reference_id}] x_points: {x_points} y_points: {y_points}")
     graph_task.update_status(GraphStatus.IN_PROGRESS)
     plt.scatter(x_points, y_points)
-    plt.savefig('foo.png')
+    path = f"uploads/{reference_id}.png"  # TODO: Fix this path
+    plt.savefig(path)
     logger.info(f"[{reference_id}] Image generated")
-    graph_task.result = "url/to/image.png"
+    graph_task.result = path  # TODO: make this file field and save the file instance
     graph_task.update_status(GraphStatus.COMPLETED)
     logger.info(f"[{reference_id}] process completed")
 
